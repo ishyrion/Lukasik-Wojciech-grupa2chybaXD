@@ -1,4 +1,4 @@
-let notatka = {
+Notatka = {
         title: 'przykladowa notatka',
         content: 'nie zapomnij kupic mleka',
         data: Date.now(),
@@ -7,13 +7,34 @@ let notatka = {
 
 }
 
-let jNotatka = JSON.stringify(notatka)
+let jNotatka = JSON.stringify(Notatka)
 
 localStorage.setItem('notatki',jNotatka)
 
-let a = JSON.parse(localStorage.getItem('notatki'))
+
 
 //zrob klase ktora przechowuje tablice tych notatek 
 //localStorage.length
 //localStorage.key(0)
 //localStorage['notatki'] ~= getItem
+
+
+
+
+let tablicaNotatek = [];
+if( localStorage.getItem("tablicaNotatek") != null){
+    tablicaNotatek = JSON.parse(localStorage.getItem('tablicaNotatek'))
+
+
+}
+
+
+function dodajNotatke() {
+    let tekst = dodajNotatkeText.value;
+
+    let nowaNotatka = new Notatka();
+    nowaNotatka.content = tekst;
+
+    tablicaNotatek.push(nowaNotatka)
+    localStorage["tablicaNotatek"] = tablicaNotatek;
+}
