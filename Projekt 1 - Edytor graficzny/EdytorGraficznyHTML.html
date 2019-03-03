@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang = "en-US">
+
+<head>
+    
+    <meta charset = "UTF-8">
+    
+    <title>Edytor Graficzny</title>
+    
+    <link rel = "stylesheet" type="text/css" href = "style.css" />
+    
+</head>
+
+<body>
+    
+    <label id="labelJasnosc">
+            <span class="label-txt">Jasność</span>
+            <input type="range" id="inputJasnosc" min="-255" max="255" value="0" onchange="dostosujWyswietlaneZdjecie()"/>
+    </label>
+
+    <label id = "labelKontrast">
+                <span class="label-txt">Kontrast</span>
+            <input type="range" id="inputKontrast" min="-100" max="100" value="0" onchange="dostosujWyswietlaneZdjecie()"/>
+    </label>
+
+    <label id = "labelNasycenie">
+                <span class="label-txt">Nasycenie</span>
+            <input type="range" id="inputNasycenie" min="0" max="200" value="100" onchange="dostosujWyswietlaneZdjecie()"/>
+    </label>
+
+    <div id = "control">
+        <label id = "labelLoaderZdjec" class = "file-input">
+            <span>Wczytaj Zdjecie</span>
+            <input type="file" onchange="previewFile()"><br>
+        </label>
+    </div>
+        
+
+
+    <div id="canvas-container"></div>        
+
+    
+    <script src="scripts/EdytorGraficznyJS.js" type="text/javascript"></script>
+
+</body>
+
+</html>
