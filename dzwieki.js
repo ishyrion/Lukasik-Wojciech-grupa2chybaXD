@@ -1,9 +1,0 @@
-  <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
-    <audio src="./sounds/boom.wav" controls id="boom></audio>
