@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/Model/Note.js"></script>
+    <script src="js/View/Main.js"></script>
+    <script src="js/View/colorPicker.js"></script>
+    <link rel="Stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="Stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>NotePocket</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="navPanel">
+
+            <div id="innerNav">
+
+                <div class="icon" title="Add new note"><i id= "addNote" class="material-icons iIcon noSelect">add</i></div>
+                <div class="icon" title="Show all notes"><i id= "showNotes" class="material-icons iIcon noSelect">speaker_notes</i></div>
+                <div class="icon" title="Delete all notes"><i id= "deleteNotes" class="material-icons iIcon noSelect">clear</i></div>
+
+
+            </div>
+
+        </div>
+        <div id="notesList">
+
+            <h1 id="notesListHeader">
+                Saved Notes
+            </h1>
+
+            <div id="notesListInner">
+                <div id="notesListHighlighted">
+                    
+                </div>
+                <div id="notesListNormal">
+
+                </div>
+            </div>
+        </div>
+        <div id ="selectedNote">
+
+            <div id="selectedNoteInner">
+
+                <div id="selectedNoteTitle">
+
+                    <input type="text" id="selectedNoteTitleInput"/>
+
+                </div>
+                <textarea id="selectedNoteContents"></textarea>
+
+                <div id="selectedNoteColorPicker">
+
+                    <div id="selectedNoteColor"></div>
+
+                    <input type="range" min=0 max=255 value=255 class="selectedNoteRange" id="selectedNoteColorB">
+                    <input type="range" min=0 max=255 value=105 class="selectedNoteRange" id="selectedNoteColorG">
+                    <input type="range" min=0 max=255 value=65 class="selectedNoteRange" id="selectedNoteColorR">
+            
+                </div>
+                <div id="selectedNoteButtons">
+                    <button id="selectedNoteAddNew" class="selectedNoteButton">Add</button>
+                    <button id="selectedNoteSave" class="selectedNoteButton">Save</button>
+                    <i id="selectedNoteDelete" class="material-icons selectedNoteIcon noSelect">delete_forever</i>
+                    <i id="selectedNoteHighlight" class="material-icons selectedNoteIcon noSelect">star_border</i>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>

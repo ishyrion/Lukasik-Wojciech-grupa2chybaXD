@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1, p, input[type="text"], textarea, button 
+{
+    font-family: "Open Sans", sans-serif;
+    color:#efefef;
+}
+.noSelect 
+{
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+body
+{
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    background: #27292e;
+}
+#container
+{
+    min-width: 1200px;
+    overflow: hidden;
+}
+#navPanel
+{
+    z-index: 99;
+    position: relative;
+    width: 75px;
+    min-height: 100vh;
+    float: left;
+    background: #35363b;
+    border-right: 1px solid #27292e;
+}
+#innerNav
+{
+    margin-top: 75px;
+}
+.iIcon
+{
+    display:block;
+    margin: 25px auto;
+    width: 45px;
+    height: 45px;
+    background-color:#3f4046;
+    text-align: center;
+    line-height:45px;
+    border-radius: 50%;
+    border: 2px solid #4169E1;
+    color: #4169E1;
+    cursor: pointer;
+}
+#notesList
+{
+    position: relative;
+    float: left;
+    background: #35363b;
+    height: 100vh;
+    width: 350px;
+    left: -350px;
+    transition: left ease-in-out 0.3s;
+    border-right: 1px solid #27292e;
+}
+#notesListHeader
+{
+    display: block;
+    float:left;
+    width:100%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #27292e;
+}
+#notesListInner
+{
+    float:left;
+    height: calc(100% - 80px);
+    width: 100%;
+    overflow-y: auto;
+}
+
+.noteDiv
+{
+    height: 50px;
+    border-bottom: 1px solid #27292e;
+    transition: background ease-in-out 0.2s;
+    cursor: pointer;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: relative;
+    overflow: hidden;
+}
+.noteDivTitle
+{
+    display: block;
+    float: left;
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.noteDivDate
+{
+    display: block;
+    float: right;
+    position: absolute;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    bottom: 0;
+    right: 5px;
+    font-size: 15px;
+}
+.noteDivHighlighted
+{
+    display: block;
+    float: right;
+    position: absolute;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    top: 0;
+    right: 5px;
+    font-size: 15px;
+}
+#selectedNote
+{
+    height:100vh;
+    width:50%;
+    float:left;
+    position: relative;
+    margin-left: 20px;
+    bottom: -100vh;
+    transition: bottom 0.5s ease-in-out;
+}
+#selectedNoteInner
+{
+    margin: 50px auto;
+    width: 80%;
+}
+#selectedNoteTitle
+{
+    border-bottom: 2px solid #efefef;
+}
+#selectedNoteTitleInput
+{
+    width:100%;
+    height:35px;
+    font-size:35px;
+    background: none;
+    border: none;
+}
+#selectedNoteContents
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 60vh;
+    font-size: 20px;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #efefef;
+    background: none;
+    overflow-y: auto;
+}
+#selectedNoteColorPicker
+{
+    margin-top:50px;
+    overflow: auto;
+}
+#selectedNoteColor
+{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius: 50%;
+    background-color:red;
+    float:left;
+}
+.selectedNoteRange
+{
+    width: 10%;
+    height: 42px;
+    float:right;
+    margin: 0 1%;
+}
+#selectedNoteButtons
+{
+    clear:both;
+    margin-top: 20px;
+    overflow: auto;
+}
+.selectedNoteButton
+{
+    float:left;
+    width:100px;
+    height:35px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+}
+.selectedNoteIcon
+{
+    display: block;
+    height:35px;
+    line-height:35px;
+    font-size: 45px;
+    overflow: hidden;
+    cursor: pointer;
+    float: right;
+}
+#selectedNoteDelete
+{
+    display: none;
+}
+
+
