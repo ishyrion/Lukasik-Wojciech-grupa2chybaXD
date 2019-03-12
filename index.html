@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SounD-KiT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="keys">
+        <div id="keyA" class="key">
+            <p>BOOM</p>
+                A
+        </div>
+        <div id="keyS" class="key">
+            <p>CLAP</p>
+                S
+        </div>
+        <div id="keyD" class="key">
+            <p>HIHAT</p>
+                D
+        </div>
+        <div id="keyF" class="key">
+            <p>KICK</p>
+                F
+        </div>
+        <div id="keyG" class="key">
+            <p>OPENHAT</p>
+                G
+        </div>
+        <div id="keyH" class="key">
+            <p>RIDE</p>
+                H
+        </div>
+        <div id="keyJ" class="key">
+            <p>SNARE</p>
+                J
+        </div>
+        <div id="keyK" class="key">
+            <p>TINK</p>
+                K
+        </div>
+        <div id="keyL" class="key">
+            <p>TOM</p>
+                L
+        </div>
+    </div>
+
+    <div id="buttons">
+        <div class="kanal 1">
+            <button id = "record1" onclick="Record(1)">1: Record</button>       
+            <button id = "stop1" onclick="Stop(1)">Stop</button>
+            <button id = "play1" onclick="Play(1)">Play</button>
+            <button id = "repeat1" onclick="Repeat(1,this)">Repeat on Play = OFF</button>
+        </div>
+
+        <div class="kanal 2">
+            <button id = "record2" onclick="Record(2)">2: Record</button>       
+            <button id = "stop2" onclick="Stop(2)">Stop</button>
+            <button id = "play2" onclick="Play(2)">Play</button>
+            <button id = "repeat2" onclick="Repeat(2,this)">Repeat on Play = OFF</button>
+        </div>
+
+        <div class="kanal 3">
+            <button id = "record3" onclick="Record(3)">3: Record</button>       
+            <button id = "stop3" onclick="Stop(3)">Stop</button>
+            <button id = "play3" onclick="Play(3)">Play</button>
+            <button id = "repeat3" onclick="Repeat(3,this)">Repeat on Play = OFF</button>
+        </div>
+
+        <div class="kanal 4">
+            <button id = "record4" onclick="Record(4)">4: Record</button>       
+            <button id = "stop4" onclick="Stop(4)">Stop</button>
+            <button id = "play4" onclick="Play(4)">Play</button>
+            <button id = "repeat4" onclick="Repeat(4,this)">Repeat on Play = OFF</button>
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <audio src="sounds/boom.wav" preload="auto" id="keyCode65"></audio>
+    <audio src="sounds/clap.wav" preload="auto" id="keyCode83"></audio>
+    <audio src="sounds/hihat.wav" preload="auto" id="keyCode68"></audio>
+    <audio src="sounds/kick.wav" preload="auto" id="keyCode70"></audio>
+    <audio src="sounds/openhat.wav" preload="auto" id="keyCode71"></audio>
+    <audio src="sounds/ride.wav" preload="auto" id="keyCode72"></audio>
+    <audio src="sounds/snare.wav" preload="auto" id="keyCode74"></audio>
+    <audio src="sounds/tink.wav" preload="auto" id="keyCode75"></audio>
+    <audio src="sounds/tom.wav" preload="auto" id="keyCode76"></audio>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
